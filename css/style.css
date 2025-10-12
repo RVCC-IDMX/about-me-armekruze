@@ -1,0 +1,48 @@
+        body {
+            font-family: "Smooch Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-color: #3D4C85;
+            color: #FF8914;
+            font-weight: bold;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 20pt;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        #hero {
+            border-radius: 25px;
+            text-align: center;
+            background-color: #80734A;
+            padding: 10px;
+            color: #FFCA15;
+            border: 5px solid #8C868C;
+        }
+
+        #hero img {
+            width: 300px;
+        }
+
+        #bio {
+            text-align: center;
+        }
+
+        footer {
+            border-radius: 25px;
+            text-align: center;
+            background-color: #80734A;
+            padding: 10px;
+            color: #FFCA15;
+            border: 5px solid #8C868C;
+        }
+
+
+
