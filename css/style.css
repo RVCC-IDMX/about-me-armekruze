@@ -83,6 +83,10 @@
             text-align: center;
         }
 
+        #lit {
+            border: 2px solid #8C868C;
+            padding: 20px;
+        }
 
 
 
