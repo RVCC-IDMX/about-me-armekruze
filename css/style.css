@@ -70,6 +70,19 @@
             border-color: #007bff;
         }
 
+        #gallery {
+            border: 2px solid #8C868C;
+        }
+
+        #gallery img {
+            max-width: 100%;
+            border-radius: 25px;
+        }
+
+        #gallery figure {
+            text-align: center;
+        }
+
 
 
 
