@@ -12,6 +12,7 @@
             font-optical-sizing: auto;
             font-style: normal;
             font-size: 20pt;
+            text-align: center;
         }
 
         header {
@@ -43,6 +44,32 @@
             color: #FFCA15;
             border: 5px solid #8C868C;
         }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+            ul li {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+
+            ul li:hover {
+            transform: translateY(-5px);
+            border-color: #007bff;
+        }
+
 
 
 
