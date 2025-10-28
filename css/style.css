@@ -77,7 +77,7 @@
             margin: 2em 2em 2em 2em;
         }
 
-            ul li {
+        ul li {
             background-color: #f8f8f8;
             border: 1px solid #ddd;
             border-radius: 12px;
@@ -88,13 +88,14 @@
             cursor: pointer;
         }
 
-            ul li:hover {
+        ul li:hover {
             transform: translateY(-5px);
             border-color: #007bff;
         }
 
         #gallery {
             border: 2px solid #8C868C;
+            padding: 45px;
         }
 
         #gallery img {
