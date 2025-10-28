@@ -3,16 +3,16 @@
             font-optical-sizing: auto;
             font-style: normal;
             background-color: #3D4C85;
-            color: #FF8914;
+            color: #FF9C3D;
             font-weight: bold;
-            font-size: 28px;
+            font-size: 36px;
         }
 
         h1, h2, h3, h4, h5 {
             font-family: "Josefin Sans", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
-            font-size: 32pt;
+            font-size: 42pt;
             text-align: center;
         }
 
@@ -30,12 +30,17 @@
             text-align: center;
         }
 
+        header img {
+            width: 140px;
+            margin-top: 1em;
+        }
+
         #hero {
             border-radius: 25px;
             text-align: center;
             background-color: #80734A;
             padding: 10px;
-            color: #FFCA15;
+            color: #FFD831;
             border: 5px solid #8C868C;
         }
 
@@ -45,14 +50,19 @@
 
         #bio {
             text-align: center;
+            margin: 1em 0em 2em 0em;
+        }
+
+        #bio h2 {
+            margin-top: 1em;
         }
 
         footer {
             border-radius: 25px;
             text-align: center;
             background-color: #80734A;
-            padding: 10px;
-            color: #FFCA15;
+            padding: 25px 0px 0px 0px;
+            color: #FFD831;
             border: 5px solid #8C868C;
         }
 
@@ -61,8 +71,10 @@
             padding: 0;
             display: flex;
             gap: 20px;
-            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
             flex-wrap: wrap;
+            margin: 2em 2em 2em 2em;
         }
 
             ul li {
@@ -96,7 +108,11 @@
 
         #lit {
             border: 2px solid #8C868C;
-            padding: 20px;
+            padding: 40px;
+        }
+
+        #lit h2 {
+            margin: 1em 1em 1em 1em;
         }
 
         #lit div p:first-child::first-letter {
@@ -105,7 +121,7 @@
             line-height: 1; /* Sets the line height to prevent extra space around the large letter */
             margin-right: 0.1em; /* Adds a small margin to the right of the drop cap */
             font-weight: bold; /* Makes the drop cap bold */
-            color: #FFCA15;
+            color: #FFD831;
         }
 
         /* Tablet size */
