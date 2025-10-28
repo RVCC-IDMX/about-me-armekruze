@@ -99,6 +99,16 @@
             padding: 20px;
         }
 
+        #lit div p:first-child::first-letter {
+            float: left; /* Floats the first letter to the left */
+            font-size: 3em; /* Makes the font size three times larger than the base paragraph font size */
+            line-height: 1; /* Sets the line height to prevent extra space around the large letter */
+            margin-right: 0.1em; /* Adds a small margin to the right of the drop cap */
+            font-weight: bold; /* Makes the drop cap bold */
+            color: #FFCA15;
+        }
+
+        /* Tablet size */
         @media screen and (min-width: 60em) {
             figure {
                 display: grid;
@@ -110,6 +120,36 @@
                 align-items: center;
                 font-size: 3rem;
                 margin-left: 1rem;
+            }
+
+            figure img {
+                width: 100%;
+            }
+
+            #lit div {
+                max-width: 100%;
+                columns: 20rem;
+            }
+        }
+
+        /* Large screen size */
+        @media screen and (min-width: 100em) {
+            #gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: center;
+            }
+
+            hr {
+                display: none;
+            }
+
+            #gallery h2 {
+                grid-column: 1/-1;
+            }
+
+            figure {
+                display: block;
             }
         }
 
