@@ -125,6 +125,25 @@
             color: #FFD831;
         }
 
+        #myVideo {
+            aspect-ratio: 16 / 9;
+            display: block; /* iframe is inline by default, change to block for margin: auto to work */
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+            border-radius: 25px;
+            width: 100%;
+            height: auto;
+        }
+
+        #video h2 {
+            margin: 1em 1em 1em 1em;
+        }
+
+        #video figcaption {
+            text-align: center;
+        }
+
         /* Tablet size */
         @media screen and (min-width: 60em) {
             figure {
