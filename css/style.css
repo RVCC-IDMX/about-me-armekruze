@@ -66,7 +66,7 @@
             border: 5px solid #8C868C;
         }
 
-        ul {
+        #hobbies ul {
             list-style: none;
             padding: 0;
             display: flex;
@@ -77,7 +77,7 @@
             margin: 2em 2em 2em 2em;
         }
 
-        ul li {
+        #hobbies ul li {
             background-color: #f8f8f8;
             border: 1px solid #ddd;
             border-radius: 12px;
@@ -88,7 +88,7 @@
             cursor: pointer;
         }
 
-        ul li:hover {
+        #hobbies ul li:hover {
             transform: translateY(-5px);
             border-color: #007bff;
         }
@@ -147,6 +147,53 @@
         /* Contact Form */
         #formElements {
             display: grid;
+            row-gap: 0.25em;
+        }
+
+        #contact {
+            padding: 1rem;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        fieldset {
+            border: 2px solid #FFD831;;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            border-radius: 25px;
+        }
+
+        legend {
+            background-color: #80734A;
+            color: #FFD831;
+            font-size: 1.5rem;
+            padding: 0.5em;
+        }
+
+        #contact label {
+            font-size: 1.25rem;
+        }
+
+        #contact input, #contact textarea, #contact select, #contact button {
+            padding: 0.5em;
+            font-size: 1rem;
+        }
+
+        #contact ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0%;
+        }
+
+        #contact button {
+            background-color: #80734A;
+            color: #FFD831;
+            font-size: 1.5rem;
+            padding: 0.5em;
+            border: 1px solid #FF9C3D;
+            max-width: 400px;
+            justify-self: center;
+            width: 50%;
         }
 
         /* Tablet size */
