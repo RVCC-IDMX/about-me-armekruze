@@ -25,13 +25,68 @@ main {
 /* navbar */
 
 .navbar {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+
     background-color: #333;
     color: whitesmoke;
-    display: flex;
-    flex-direction: column;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2.5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: whitesmoke;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle-label span::before {
+    bottom: 12px;
+}
+
+.nav-toggle-label span::after {
+    top: 12px;
 }
 
 /* logo */
@@ -39,6 +94,7 @@ main {
 .logo {
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 
 .logo img {
@@ -52,10 +108,15 @@ main {
 
 /* navigation list */
 
-.navbar-links li {
+.navbar-links ul {
     list-style: none;
-    display: block;
-    padding: 0 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li {
+    margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 /*  
@@ -71,6 +132,9 @@ and then on hover
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
 .navbar-links a:hover,
@@ -93,16 +157,50 @@ such that no text wraps
         justify-content: space-between;
     } */
     .navbar {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
+        transform: scale(1,1);
+        top: 0;
+        transition: none;
+    }
+
+    .navbar-links a {
+        color: whitesmoke;
+        background-color: #333;
+        font-size: 2rem;
+        padding: 1.5rem 1.25rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: capitalize;
+        opacity: 1;
+        transition: none;
+    }
+
+    .navbar-links li {
+        margin-bottom: 0em;
+        margin-left: 0em;
     }
     .navbar ul {
         display: flex;
         justify-content: space-between;
+        height: 75px;
+        align-items: center;
+    }
+
+    .nav-toggle-label {
+        display: none;
     }
 
     .logo img {
-    height: 8vw;
-    width: 8vw;
+        height: 8vw;
+        width: 8vw;
+        z-index: 1000;
+    }
+
+    .logo h1 {
+        z-index: 1000;
+        font-size: 1.2em;
     }
 }
