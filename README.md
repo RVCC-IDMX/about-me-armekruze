@@ -50,6 +50,21 @@ This project, titled **“Web Dev 1: About Me,”** serves as a Personal Portfol
 
 ---
 
+## Refrences
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-repeat
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-size
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-position
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-origin
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-clip
+
+- background images from https://www.pexels.com/search/website%20background/
+
+---
+
 ## License
 
 The content, code, and materials provided in this repository are licensed under the **MIT License**.

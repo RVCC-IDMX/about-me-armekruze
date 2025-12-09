@@ -86,14 +86,24 @@
                 <figcaption>My hanging plant</figcaption>
             </figure>
         </section>
-        <article id="lit">
-            <h2>Alice in Wonder land</h2>
-            <div>
-                <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures or conversation?'</p>
+        <article id="blog">
+            <div id="blogtext">
+                <h2>Background Image Properties Blog Article</h2>
+                <div>
+                    <p>Creating a great background image is the simplest way to add visual flair to your site. Dropping an image in the background is only the first step though. To make your design look professional you need total control of how that image interacts with its container. It can either tile, cover under everything or be clipped to the shape of your text. My goal of this blog is to show how to control background images. The five background image properties that are used to control the image behavior are background-repeat, background-size, background-position, background-origin, and background-clip.</p>
 
-                <p>So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.</p>
+                    <p>The background-repeat property helps to control how a background image is displayed. Normally background images repeat by default, and tiles are repeated horizontally and vertically to fill in the space that the background image is applied. By using repeat-x you can make the tiles only repeat horizontally, or you can use repeat-y and the background image will only repeat vertically. Additionally, you can use no-repeat to only display the image once. If your page is responsive you can use space or round. Space will distribute the images evenly and add gaps to stop them from getting cut off. Lastly, round will stretch or shrink the images to fit the space without any gaps. They can also be combined like background-repeat: round space.</p>
 
-                <p>The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well. Either the well was very deep, or she fell very slowly, for she had plenty of time as she went down to look about her and to wonder what was going to happen next.</p>
+                    <p>The background-size property is needed for responsive pages and allows you to make a background image scale with the container that it is in. By default the image will keep its normal dimensions. If you need to fill the whole area with the background image you can use cover, which will scale the image to fit the container but keeps the aspect ratio. You can also use contain which will scale the image without any cropping but can leave empty space. Lastly, you can size an image with pixels or percentages letting you control the image.</p>
+
+                    <p>The background-position property sets the starting point of the background image within its container. You can choose from the keywords like center, top right, or numeric values for lengths or percentages. Percentages are relative to the extra space remaining after subtracting the image size from the container size. An example would be 50% 50% will center the image. You can also use four values like bottom 10px right 20px and the image will be offset from an edge rather than the default top-left.</p>
+
+                    <p>The background-origin property decides the starting point or positioning area of a background image relative to the CSS Box Model. It uses three values, padding-box, the first and the default which positions the image to start from the outer edge of the padding. The second, border-box causes the image to extend further, starting from the boarders outer edge. The image will be under the border with border-box. The third, content-box forces the image to begin at the inner edge of the padding and confines to the content area of the element. This property is ignored when background-attachment is set to fixed.</p>
+
+                    <p>The background-clip property decides the final painting area of an elements background, and shows where the image is visible. It uses three box-model values to control the area. The first is border-box, which is the default, and allows the background to extent underneath the entire border. The second is padding-box, which clips the background at the outer edge of the padding so nothing appears under the border. The third, content-box, restricts the background to the elements inner content area. Additionally, there is the text value that clips the background image to the shape of the foreground text itself. To use this effect the text color must be transparent.</p>
+
+                    <p>I used all of the five properties of background image to create this section containing this blog. It is a continuous background with image colored text. Both images used background-repeat: no-repeat, background-position: center, background-size: cover, and background-origin: border-box. However they differ with background-clip. I used padding-box on the water image and text on the other image and applied color: transparent to let the image show thru the text.</p>
+                </div>
             </div>
         </article>
         <section id="video">

@@ -130,13 +130,29 @@
             text-align: center;
         }
 
-        #lit {
+        #blog {
             border: 2px solid #8C868C;
             padding: 45px;
+            background-image: url('../img/pexels-enginakyurt-1435752.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-origin: border-box;
+            background-clip: padding-box;
         }
 
-        #lit h2 {
-            margin: 1em 1em 1em 1em;
+        #blog h2 {
+            font-size: 36px;
+        }
+
+        #blogtext {
+            background-image: url('../img/pexels-padrinan-255379.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-origin: border-box;
+            background-clip: text;
+            color: transparent;
         }
 
         #lit div p:first-child::first-letter {
